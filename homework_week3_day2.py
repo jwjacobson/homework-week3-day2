@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# Exercise 1a
 class Employee:
     raise_factor = 1.05
 
@@ -18,6 +19,7 @@ class Employee:
         print(f"{self.first_name.title()} {self.last_name.title()} got a raise.")
         print(f"Their new salary is {self.salary}.")
 
+# Exercise 1b
 class Sales(Employee):
     def __init__(self, first_name, last_name, title, salary, email, phone_number):
         super().__init__(first_name, last_name, title, salary, email)
@@ -34,12 +36,20 @@ class Development(Employee):
     def code(self):
         print(f"{self.first_name.title()} {self.last_name.title()} is writing code.")
 
-
+# Exercise 1c
 employee1 = Sales("wilfred", "sinecure", "head of customer relations", 50000, "wsinecure@org.org", "(123) 456 7890")
 employee1.followup_email("Mike O'Neill")
 employee1.followup_email("Hannah Stern")
 employee1.employee_raise()
 
+# Exercise 1d
 employee2 = Development("monica", "tulayev", "sr. engineer", 100000, "mtulayev@org.org")
 employee2.code()
 employee2.employee_raise()
+
+
+# Exercise 2
+import geometry
+
+print(geometry.area_of_circle(7))
+print(geometry.hypotenuse(3, 4))
