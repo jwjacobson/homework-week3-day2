@@ -4,5 +4,4 @@ def area_of_circle(radius):
 
 def hypotenuse(side1, side2):
     from math import sqrt
-    return f"The length of the hypotenuse of a triange with sides {side1} and {side2} is {sqrt(side1**2 + side2**2)}."
-    
+    return f"The length of the hypotenuse of a triangle with sides {side1} and {side2} is {sqrt(side1**2 + side2**2)}."    
